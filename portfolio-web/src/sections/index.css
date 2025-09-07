@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer components {}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --blue-50: #598eff;
+  --blue-300: #1c34ff;
+  --white-50: #fdfdfd;
+  --black-100: #0b0620;
+  --black-300: #17151f;
+  --pink-100: #ff28d5;
+  --primary: #a7a7a7;
+}
+
+html, body {
+  width: 100dvw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--black-100);
+  color: var(--primary);
+}
+
+section {
+  width: 100dvw;
+  min-height: 100dvh;
+}
